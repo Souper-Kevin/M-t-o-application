@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head> 
+    <title>Choisis ta Météo.</title> 
+    <meta charset="UTF-8">
+    <meta name="description" content="Ma page Météo fait pour mon exercice SIMPLON." >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+    <h1>Ma Météo, bienvenue.</h1>
+     <form >      
+            <fieldset>
+                
+                <legend> Rechercher une ville</legend>
+                    <label for="city">Écris ta ville</label>
+                    <input type="text" name="city" id="city" placeholder="Niort" required>
+            </fieldset>
+            <input type="submit" value="Voir la Météo">
+        </form>
+        <section>
+            <table>                
+                    <tr>
+                        <th>Climat</th>
+                        <th>Température</th> 
+                        <th>Humidité</th>
+                        <th>Vitesse du vent</th>        
+                    </tr>
+                    <tr>
+                        <td id="climat"></td>
+                        <td id="temperature"></td>
+                        <td id="humidite"></td>
+                        <td id="vent"></td>
+                    </tr>       
+            </table>
+        </section>           
+</body>
+</html>
