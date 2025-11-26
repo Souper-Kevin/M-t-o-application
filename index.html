@@ -7,18 +7,22 @@
     <meta name="description" content="Ma page Météo fait pour mon exercice SIMPLON." >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" >
+   
 </head>
 
 <body>
-    <h1>Ma Météo, bienvenue.</h1>
-     <form >      
-            <fieldset>
-                
+    <div class="meteo-container">
+    <h1>Bienvenue, voici la météo.</h1>
+    
+     <form id="meteo-form"> 
+    
+            <fieldset>                
                 <legend> Rechercher une ville</legend>
                     <label for="city">Écris ta ville</label>
-                    <input type="text" name="city" id="city" placeholder="Niort" required>
+                    <input type="text" name="city" id="city" placeholder="Quelle est ta ville ?" required>
             </fieldset>
             <input type="submit" value="Voir la Météo">
+                    
         </form>
         <section>
             <table>                
@@ -33,8 +37,11 @@
                         <td id="temperature"></td>
                         <td id="humidite"></td>
                         <td id="vent"></td>
+                        
                     </tr>       
             </table>
-        </section>           
+        </section>  
+        </div>
+ <script src="meteo.js"></script> 
 </body>
 </html>
